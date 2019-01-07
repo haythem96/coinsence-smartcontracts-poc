@@ -5,16 +5,16 @@ import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 /**
- * @title Standard ERC20 token
+ * @title ERC20 token
  */
 contract Coin is IERC20 {
     using SafeMath for uint256;
 
-    mapping (address => uint256) private _balances;
+    mapping (address => uint256) internal _balances;
 
-    mapping (address => mapping (address => uint256)) private _allowed;
+    mapping (address => mapping (address => uint256)) internal _allowed;
 
-    uint256 private _totalSupply;
+    uint256 internal _totalSupply;
 
     /**
     * @dev Total number of tokens in existence
