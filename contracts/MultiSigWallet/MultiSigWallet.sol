@@ -4,6 +4,9 @@ pragma solidity ^0.4.22;
 /// @title Multisignature wallet - Allows multiple parties to agree on transactions before execution.
 /// @author Haythem Sellami
 /// @notice Inspired from consensy multisig wallet contracts
+
+///TODO:
+///Implement ERC20 token transfer instead/with Ether
 contract MultiSigWallet {
 
     /*
